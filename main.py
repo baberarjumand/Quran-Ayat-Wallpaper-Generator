@@ -31,9 +31,12 @@ def create_background_image(MAX_W, MAX_H):
 def write_text_on_image(t1, t2, img_width=1920, img_height=1080):
     im = Image.new('RGB', (img_width, img_height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(im)
+    # default text width is set to 120 characters
     para = textwrap.wrap(t1, width=120)
+    # default font-size is 35
     font = ImageFont.truetype('fonts/Amiri-Regular.ttf', 35)
 
+    # by default, text is written after leaving a space 15 percent of the total height of image on top
     current_h, pad = 0.15 * img_height, 10
     for line in para:
         w, h = draw.textsize(line, font=font)
