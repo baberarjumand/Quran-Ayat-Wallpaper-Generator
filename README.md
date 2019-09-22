@@ -1,4 +1,4 @@
-# Quran-Ayat-Wallpaper-Generator
+# Quran Ayat Wallpaper Generator
 This program generates wallpapers from the ayat (verses) of the Quran.
 
 By default:
