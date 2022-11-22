@@ -1,5 +1,5 @@
 arabic-reshaper==2.0.15
 future==0.17.1
-Pillow==6.1.0
+Pillow==9.3.0
 python-bidi==0.4.2
 six==1.12.0
